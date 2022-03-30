@@ -1,0 +1,13 @@
+.texto {
+    color: white;
+    background-color: blueviolet;
+    width: 300px;
+    height: 15em;
+    padding: 1em;
+    margin: 3rem;
+    font-size: 21px;
+    outline: solid;
+    outline-width: 1em;
+    outline-color: aqua;
+
+}

@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 2fr 3fr 1fr 1fr 1fr 1.5fr 2%;
+    
+    
+
+}
+.rojo{
+    background-color: red;
+    margin: 0.5rem;
+    
+    
+  }
+.azulverdoso{
+    background-color: rgb(9, 122, 98);
+    grid-column: 2/4;
+    margin: 0.5rem;
+}
+
+.verde{
+    background-color: green;
+    margin: 0.5rem;
+}
+.celesteoscuro{
+    background-color: rgb(69, 151, 218);
+    grid-row: 1/4;
+    grid-column: 5;
+    margin: 0.5rem;
+    
+    }
+.azul{
+    background-color: blue;
+    grid-column: 6/7;
+    grid-row: 1/4;
+    margin: 0.5rem;
+}
+
+.celeste{
+    background-color: skyblue;
+    grid-row: 1/4;
+    grid-column: 7;
+    margin: 0.5rem;
+}
+
+.amarillo{
+    background-color: rgb(230, 181, 23);
+    grid-row: 2/4;
+    grid-column: 1/2;
+    margin: 0.5rem;
+}
+
+.rosado{
+    background-color: salmon;
+    grid-row: 2/4;
+    grid-column: 2/5;
+    margin: 0.5rem;
+}

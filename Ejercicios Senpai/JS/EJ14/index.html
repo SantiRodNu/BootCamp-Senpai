@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        capacitacion()
+        function capacitacion(){
+            let nombre = parseInt(prompt('Ingrese su nombre'))
+            let totalpreguntas = parseInt(prompt('Ingrese cantidad de preguntas'))
+            let correctas = parseInt(prompt('Ingrese preguntas correctas'))
+            let nivel = (correctas*100)/totalpreguntas
+            
+            if(nivel >= 90){
+                console.log('Nivel superior')
+            } else if( nivel >=75 && nivel <90){
+                console.log('Nivel medio')
+            } else if(nivel >=50 && nivel <75){
+                console.log('Nivel regular')
+            }else{
+                console.log('Fuera de nivel')
+            }
+
+
+        }
+    </script>
+    
+</body>
+</html>

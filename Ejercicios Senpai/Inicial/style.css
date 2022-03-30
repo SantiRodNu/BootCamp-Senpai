@@ -1,0 +1,12 @@
+*{
+padding: 0;
+margin: auto;
+max-width: 960px;
+}
+
+
+.virus {
+   width: 100%;
+   object-fit:none;   
+}
+
