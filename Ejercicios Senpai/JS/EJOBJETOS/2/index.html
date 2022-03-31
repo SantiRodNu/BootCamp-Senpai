@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        const creacionAlumnos = (nombre, apellido, telefono, nacimiento, direccion) =>{
+        const alumno = {
+            nombre,
+            apellido,
+            telefono,
+            nacimiento,
+            direccion
+        }
+
+        return alumno
+
+
+    }
+
+    const alumnos = []
+    const santiago = creacionAlumnos("Santiago","Rodriguez","23453423","02/10/93", "18 de julio")
+    const nicolas = creacionAlumnos("Nicolas","Fernandez","6425432","03/12/97", "18 de julio")
+    const maria = creacionAlumnos("Maria","Suarez","543543","09/08/90", "18 de julio")
+    const carlos = creacionAlumnos("Carlos","Biglia","7546546","05/10/87", "18 de julio")
+
+
+    console.log(santiago)
+    console.log(nicolas)
+    console.log(maria)
+    console.log(carlos)
+
+
+    </script>
+</body>
+</html>
