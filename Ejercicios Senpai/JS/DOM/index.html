@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="text-input" />
+    <button id="add-buttonuno">1</button>
+    <button id="dos">2</button>
+    <button id="tres">3</button>
+    <main class = "container" id="page-main">
+    </main>
+</body>
+<script>
+    const main = document.getElementById("page-main");
+    const input = document.getElementById("text-input");
+    const addButton = document.getElementById("add-button");
+    const removeButton = document.getElementById("reset-button")
+   
+    const agregarParrafoAlMain = () => {
+
+        if(input.value === "") {
+            return;
+        };
+        
+        const newElement = document.createElement("p");
+        newElement.textContent = input.value;
+        input.value = "";
+        main.appendChild(newElement);
+    }
+    
+
+    const eliminarParrafoDelMain = () => {
+        main.removeChild(main.lastChild)
+    
+    }
+    
+
+    addButton.addEventListener("click", agregarParrafoAlMain);
+    removeButton.addEventListener("click", eliminarParrafoDelMain);
+    
+</script>
+</html>
